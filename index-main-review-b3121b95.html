@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简明指南 · 500彩票网官方</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(145deg, #fff0e6 0%, #fed9c2 60%, #fbc4ab 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1rem;
+            line-height: 1.6;
+            color: #3e2c1d;
+        }
+        .container {
+            max-width: 960px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.8rem;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 2.4rem;
+            padding: 2.2rem 2.5rem;
+            box-shadow: 0 12px 30px rgba(190, 110, 70, 0.18);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 18px 36px rgba(190, 110, 70, 0.22);
+        }
+        .hero {
+            background: linear-gradient(135deg, #fff7f0, #ffe8da);
+            border-left: 6px solid #e8824a;
+            text-align: center;
+            padding: 2.8rem 2rem 2.2rem;
+        }
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            background: linear-gradient(145deg, #a8552b, #cf6e3e);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.8rem;
+        }
+        .hero .sub {
+            font-size: 1.15rem;
+            color: #754f36;
+            max-width: 580px;
+            margin: 0 auto 1.2rem;
+        }
+        .hero .note-tag {
+            display: inline-block;
+            background: #fff1e3;
+            color: #a5582e;
+            padding: 0.3rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid #ddb697;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.8rem;
+        }
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #7b4e2e;
+            margin-bottom: 1.4rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 3px dotted #e8c8b2;
+        }
+        .feature-item {
+            display: flex;
+            gap: 0.8rem;
+            margin-bottom: 1.2rem;
+        }
+        .feature-icon {
+            font-size: 1.8rem;
+            line-height: 1.2;
+            flex-shrink: 0;
+        }
+        .feature-text strong {
+            color: #aa5b33;
+        }
+        .faq-item {
+            margin-bottom: 1rem;
+        }
+        .faq-q {
+            font-weight: 600;
+            color: #6a4128;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+        .faq-a {
+            padding-left: 1rem;
+            border-left: 3px solid #f3cfbb;
+            color: #4e3627;
+        }
+        .link-sentence {
+            background: #faf0e9;
+            padding: 0.9rem 1.6rem;
+            border-radius: 80px;
+            display: inline-flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.2rem 0.6rem;
+            font-size: 1.05rem;
+            margin-top: 0.5rem;
+            border: 1px solid #e3c5b0;
+            box-shadow: 0 2px 6px rgba(180, 100, 50, 0.06);
+        }
+        .link-sentence a {
+            color: #b45d30;
+            text-decoration: none;
+            font-weight: 600;
+            background: #ffe5d6;
+            padding: 0.2rem 0.8rem;
+            border-radius: 40px;
+            transition: background 0.2s, color 0.2s;
+        }
+        .link-sentence a:hover {
+            background: #d77d4e;
+            color: #fff;
+        }
+        .footer-links {
+            text-align: center;
+            font-size: 0.95rem;
+            background: #f3e2d6;
+            border-radius: 2.4rem;
+            padding: 1.2rem 2rem;
+            color: #5c3f2c;
+        }
+        .footer-links a {
+            color: #8c582f;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #dbaa86;
+            font-weight: 500;
+        }
+        .footer-links span {
+            margin: 0 0.6rem;
+            opacity: 0.4;
+        }
+        .note-reminder {
+            background: #f9ece2;
+            border-radius: 40px;
+            padding: 0.8rem 1.6rem;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+            border: 1px solid #e7c8b3;
+        }
+        .note-reminder span:first-child {
+            font-weight: 500;
+            color: #a85628;
+        }
+        @media (max-width: 700px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+            .card {
+                padding: 1.6rem 1.2rem;
+                border-radius: 1.8rem;
+            }
+            .grid-2 {
+                grid-template-columns: 1fr;
+                gap: 1.2rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .link-sentence {
+                padding: 0.7rem 1.2rem;
+                font-size: 0.95rem;
+                border-radius: 50px;
+            }
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+        @media (max-width: 450px) {
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            .hero .sub {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- hero 区 -->
+        <div class="card hero">
+            <h1>简明指南 · 访问提醒</h1>
+            <p class="sub">不论你刚接触，还是想重新熟悉，这里都提供一份温和的路径参考。<br>保持理性，轻松浏览。</p>
+            <div class="note-tag">⚡ 信息更新于近期 · 建议收藏</div>
+        </div>
+
+        <!-- 优势 + 说明两列 -->
+        <div class="grid-2">
+            <!-- 优势区 -->
+            <div class="card">
+                <h2 class="section-title">✦ 几点优势</h2>
+                <div class="feature-item">
+                    <div class="feature-icon">🧭</div>
+                    <div class="feature-text"><strong>信息明晰</strong> — 版块划分清楚，从赛事数据到参考指引，浏览路径自然顺畅。</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔄</div>
+                    <div class="feature-text"><strong>持续更新</strong> — 内容根据行业动态和用户反馈做调整，保持参考价值。</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚖️</div>
+                    <div class="feature-text"><strong>中立视角</strong> — 提供客观信息聚合，不渲染过度承诺，只呈现可查阅的素材。</div>
+                </div>
+                <div style="margin-top: 1rem; font-size: 0.95rem; background: #fcf4ed; padding: 0.6rem 1rem; border-radius: 60px; border: 1px solid #e7cbb6;">
+                    💡 适合日常查询、对比参考，也适合新用户初步了解。
+                </div>
+            </div>
+
+            <!-- 说明区 / 场景 -->
+            <div class="card">
+                <h2 class="section-title">✦ 使用情境</h2>
+                <p style="margin-bottom: 0.8rem;">当你需要快速获取参考数据、查看常见问题汇总，或者想了解最新动态，可以打开 <strong style="color:#9d562c;">500彩票网官方</strong> 页面。</p>
+                <p style="margin-bottom: 1rem;">它聚合了多个维度的信息模块，从赛事预告到历史统计，分类清晰，便于对照查阅。</p>
+                <div class="link-sentence">
+                    <span>📎 直接前往</span>
+                    <a href="https://index-main-500.com">500彩票网官方</a>
+                    <span style="opacity:0.75;">· 建议使用稳定网络环境</span>
+                </div>
+                <div style="margin-top: 1rem; font-size: 0.9rem; color: #7d5b43;">
+                    <span>🔹 首次访问时可先浏览帮助说明，再逐步探索各板块。</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 提醒 / 提示区 -->
+        <div class="card">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
+                <div>
+                    <h3 style="font-weight: 500; color: #7a4c2d; margin-bottom: 0.2rem;">📌 访问提醒 &amp; 说明</h3>
+                    <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem;">
+                        <li style="margin-bottom: 0.3rem;">✓ 建议在浏览前确认网络连接稳定，避免页面加载中断。</li>
+                        <li style="margin-bottom: 0.3rem;">✓ 部分信息会定期刷新，以实际页面呈现为准。</li>
+                        <li style="margin-bottom: 0.3rem;">✓ 若遇到显示异常，可尝试清除缓存或更换浏览器。</li>
+                    </ul>
+                </div>
+                <div style="background: #e8d5c4; border-radius: 60px; padding: 0.5rem 1.2rem; font-size: 0.9rem; white-space: nowrap;">
+                    ⏳ 适合收藏以备后用
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 摘要 -->
+        <div class="card">
+            <h2 class="section-title">✦ 常见问题摘要</h2>
+            <div class="faq-item">
+                <span class="faq-q">❓ 页面内容多久更新一次？</span>
+                <div class="faq-a">通常根据赛事节奏和资料整理周期进行更新，没有固定日期，但会保持合理的新鲜度。建议时常返回查看。</div>
+            </div>
+            <div class="faq-item">
+                <span class="faq-q">❓ 是否提供历史数据查询？</span>
+                <div class="faq-a">是的，平台上保留了多个时间维度的统计模块，可以按条件筛选回顾。具体范围可在对应板块内查阅。</div>
+            </div>
+            <div class="faq-item">
+                <span class="faq-q">❓ 移动端浏览体验如何？</span>
+                <div class="faq-a">页面采用了响应式设计，在手机和平板上均可自适应布局，主要功能与桌面端保持一致。</div>
+            </div>
+            <div style="margin-top: 1rem; padding-top: 0.6rem; border-top: 1px solid #e7d1c0; font-size: 0.9rem;">
+                <span>更多细节可前往 <a href="https://index-main-500.com" style="color:#a85b31; text-decoration: underline; text-underline-offset: 2px;">500彩票网官方</a> 查阅完整说明。</span>
+            </div>
+        </div>
+
+        <!-- 底部链接 -->
+        <div class="footer-links">
+            <span>📋 相关资源：</span>
+            <a href="https://index-main-500.com">500彩票网官方</a>
+            <span>·</span>
+            <a href="#" style="text-decoration: none; cursor: default; color: #5c3f2c; opacity: 0.6;">帮助中心</a>
+            <span>·</span>
+            <span style="opacity: 0.7;">常见问题</span>
+            <span>·</span>
+            <span style="opacity: 0.7;">版本说明</span>
+            <div style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.5;">开放参考 · 理性使用</div>
+        </div>
+
+        <!-- 小提示条 -->
+        <div class="note-reminder">
+            <span>💬 温馨提示：</span>
+            <span>所有信息仅供参考，请结合自身判断合理使用。如有疑问，可查阅页面内说明或联系支持渠道。</span>
+        </div>
+    </div>
+</body>
+</html>
